@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.Firstpage {
+  background-color: black;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  &__title{
+  
+    padding: calc(20px + 2vmin) ;
+    font-family: 'Bangla MN';
+    border: 1px red solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(60px + 2vmin);
+  }
+
+
+  &__image{
+    border: 1px red solid;
+   
+  }
+
+
+
+
+  &__shop{
+   
+    
+
+    &--texte{
+    
+    }
+  }
+
+
+
+}
+
+
+.Image{
+
+  &__flowrigth{
+    border: 1px red solid;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    font-size: calc(20px + 2vmin);
+    font-family: 'Bangla MN';
+    margin-top: 1rem;
+  }
+
+  &__flowerleft{
+    position: absolute;
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(20px + 2vmin);
+    font-family: 'Bangla MN';
+    margin-top: 1rem;
+  }
+
+
+
+  &__image1{
+    border: 1px red solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  
+  &__backrigth{
+    position: absolute;
+  }
+  &__tableblur{
+    position: absolute;
+    
+  }
+  &__fullblur{
+    position: absolute;
+  }
+
+}
+
+.Header{
+
+  border: 1px red solid;
+  display: flex;
+  justify-content: space-between;
+
+  &__name{
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+ 
+
+   &--secondName{
+      margin-left: 100px;
+    }
+
+ 
+  }  
+  
+  &__menu{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    margin-top: 1rem;
+    color: #fff;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    border: 1px solid red;
+    align-items: center;
+     
+    &--item{
+      margin-left: 1rem;
+    }
+  }
+
+
+
+
+
+}
