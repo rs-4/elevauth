@@ -4,115 +4,121 @@
 
 .Firstpage {
   background-color: black;
-  min-height: 100vh;
+  z-index: -2;
+  min-height: 130vh;
   font-size: calc(10px + 2vmin);
   color: white;
 
-  &__title{
-  
-    padding: calc(20px + 2vmin) ;
-    font-family: 'Bangla MN';
-    border: 1px red solid;
+  &__title {
+    position: relative;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Bangla MN";
+    margin-left: 20%;
+    margin-right: 20%;
+    font-style: normal;
+    font-weight: 400;
     font-size: calc(60px + 2vmin);
+    line-height: 100px;
+    /* or 104% */
+
+    text-align: center;
   }
 
-
-  &__image{
-    border: 1px red solid;
-   
-  }
-
-
-
-
-  &__shop{
-   
-    
-
-    &--texte{
-    
+  &__shop {
+    &--texte {
     }
   }
 
+  &__Image {
+    &__first {
+      z-index: 0;
+      position: absolute;
+      top: 40rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+    }
 
+    &__image1 {
+      z-index: 0;
+      position: absolute;
+      top: 20rem;
+      left: 12rem;
+      width: 200px;
+    }
 
+    &__flowrigth {
+      z-index: 0;
+      position: absolute;
+      width: 400px;
+      right: 0;
+      max-width: 100%;
+      top: calc(50% - 0px);
+      height: auto;
+    }
+
+    &__backtop {
+      z-index: 0;
+      position: absolute;
+
+      top: 0;
+      left: 20%;
+      width: 400px;
+    }
+    &__flowerleft {
+      z-index: 0;
+      position: absolute;
+      top: calc(40% - 0px);
+      left: 0;
+      width: 400px;
+    }
+    &__backrigth {
+      z-index: 0;
+      position: absolute;
+      right: 15rem;
+      top: 30rem;
+    }
+    &__tableblur {
+      z-index: 0;
+      position: absolute;
+      top: 5rem;
+      right: 5rem;
+    }
+    &__fullblur {
+      z-index: 2;
+      position: absolute;
+      top: 14rem;
+      right: 20rem;
+    }
+  }
 }
 
-
-.Image{
-
-  &__flowrigth{
-    border: 1px red solid;
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    font-size: calc(20px + 2vmin);
-    font-family: 'Bangla MN';
-    margin-top: 1rem;
-  }
-
-  &__flowerleft{
-    position: absolute;
-    border: 1px red solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: calc(20px + 2vmin);
-    font-family: 'Bangla MN';
-    margin-top: 1rem;
-  }
-
-
-
-  &__image1{
-    border: 1px red solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-  }
-
-  
-  &__backrigth{
-    position: absolute;
-  }
-  &__tableblur{
-    position: absolute;
-    
-  }
-  &__fullblur{
-    position: absolute;
-  }
-
-}
-
-.Header{
-
-  border: 1px red solid;
+.Header {
   display: flex;
   justify-content: space-between;
+  font-family: "Bangla MN";
 
-  &__name{
-
+  &__name {
+    z-index: 2;
     font-size: 2rem;
-    font-weight: 600;
+
     color: #fff;
-    text-transform: uppercase;
+    line-height: 1.2;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem;
- 
+    padding: 10px 10px 10px 10px;
 
-   &--secondName{
+    &--secondName {
+      z-index: 2;
       margin-left: 100px;
     }
+  }
 
- 
-  }  
-  
-  &__menu{
+  &__menu {
+    z-index: 2;
     display: flex;
     justify-content: right;
     width: 100%;
@@ -120,16 +126,11 @@
     color: #fff;
     letter-spacing: 0.1rem;
     margin-bottom: 1rem;
-    border: 1px solid red;
     align-items: center;
-     
-    &--item{
+
+    &--item {
+      z-index: 2;
       margin-left: 1rem;
     }
   }
-
-
-
-
-
 }
